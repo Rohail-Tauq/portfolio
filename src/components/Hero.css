@@ -1,0 +1,170 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 5%;
+  background-color: #121212;
+  flex-wrap: wrap;
+}
+
+.hero-left {
+  flex: 1;
+  min-width: 300px;
+  color: white;
+}
+
+.hero-left h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-left p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  max-width: 500px;
+}
+
+.fancy-button {
+  --color: #04a4b9;
+  font-family: inherit;
+  display: inline-block;
+  width: 8em;
+  height: 2.6em;
+  line-height: 2.5em;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border: 2px solid var(--color);
+  transition: color 0.5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: var(--color);
+  background: transparent;
+  padding: 0px;
+}
+.fancy-button::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+  top: 100%;
+  left: 100%;
+  transition: all 0.7s;
+}
+
+.fancy-button:hover {
+  color: #fff;
+}
+
+.fancy-button:hover::before {
+  top: -30px;
+  left: -30px;
+}
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.img-wrapper {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: #00bcd4;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.social-icons {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon {
+  font-size: 22px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #00bcd4;
+  background-color: transparent;
+  border: 2px solid #00bcd4;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  background-color: #00bcd4;
+  color: #121212;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 188, 212, 0.6);
+}
+
+/* Optional different hover glow per platform */
+.social-icon.github:hover {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+.social-icon.linkedin:hover {
+  box-shadow: 0 0 10px rgba(10, 102, 194, 0.6);
+}
+.social-icon {
+  font-size: 22px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #00bcd4;
+  background-color: transparent;
+  border: 2px solid #00bcd4;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  background-color: #00bcd4;
+  color: #121212;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 188, 212, 0.6);
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  transition: color 0.3s ease, filter 0.3s ease;
+}
+
+.social-icon.upwork:hover .upwork-icon {
+  color: #121212;
+}
+
+
+
+
+
