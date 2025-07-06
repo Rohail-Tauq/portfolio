@@ -48,3 +48,17 @@
 .navbar-links li a:hover::after {
   width: 100%;
 }
+@media (max-width: 600px) {
+  .navbar-links {
+    gap: 15px;
+  }
+
+  .navbar-logo {
+    font-size: 20px;
+  }
+
+  .navbar-links li a {
+    font-size: 14px;
+  }
+}
+
