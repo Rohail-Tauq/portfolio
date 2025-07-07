@@ -2,7 +2,7 @@ import React from 'react';
 import './Projects.css';
 import typingTest from '../assets/typing.jpg';
 import quizApp from '../assets/quiz.webp';
-import password from '../assets/password.webp';
+import BMI from '../assets/BMI.jpg';
 import weatherApp from '../assets/weather.jpg';
 
 const Projects = () => {
@@ -38,7 +38,14 @@ const Projects = () => {
             </div>
           </div>
 
-          {/* Add more cards here */}
+          <div className="project-card">
+            <img src={BMI} alt="BMI Calculator" className="project-image" />
+            <div className="project-content">
+              <h3>BMI Calculator</h3>
+              <p>BMI calculation of Metric and Imperial categories</p>
+              <a href="https://rohailbmicalculator.vercel.app/"><button className="fancy-button">View</button></a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
