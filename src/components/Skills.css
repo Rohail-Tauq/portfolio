@@ -1,65 +1,83 @@
-.skills {
+.skills-section {
   padding: 60px 5%;
-  background-color: #121212;
-  color: white;
+  background-color: #000000;
+  color: #ffffff;
   text-align: center;
 }
 
-.skills h2 {
-  font-size: 2.2rem;
-  margin-bottom: 40px;
+.skills-section h2 {
+  font-size: 2.4rem;
+  margin-bottom: 50px;
+  font-weight: 600;
 }
 
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+.skills-section h2 span {
+  color: #ff6600;
+  padding: 4px 12px;
+  border-radius: 8px;
+  background: rgba(255, 102, 0, 0.1);
+  box-shadow: 0 0 10px rgba(255, 102, 0, 0.3);
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: 0.5px;
+}
+
+/* Card container */
+.skills-categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
-  max-width: 1000px;
-  margin: 0 auto;
 }
 
+/* Individual card */
 .skill-card {
-  background-color: #1a1a1a;
-  padding: 20px;
-  border-radius: 12px;
-  text-align: center;
-  box-shadow: 0 0 15px rgba(0, 188, 212, 0.1);
+  flex: 1 1 300px;
+  max-width: 320px;
+  padding: 25px 20px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow:
+    inset 0 0 10px rgba(255, 255, 255, 0.1),
+    0 0 30px rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
   transition: transform 0.3s ease;
 }
 
 .skill-card:hover {
-  transform: translateY(-8px);
-}
-
-.skill-icon {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+  transform: translateY(-6px);
 }
 
 .skill-card h3 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-  color: #00bcd4;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: white;
 }
 
-.progress-bar {
-  height: 8px;
-  background-color: #333;
-  border-radius: 10px;
-  overflow: hidden;
-  margin-top: 10px;
-  position: relative;
+/* Grid layout inside card */
+.skill-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  justify-items: center;
 }
 
-.progress-fill {
-  height: 100%;
-  background-color: #00bcd4;
-  transition: width 1s ease-in-out;
+/* Icon & label pair */
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.skill-percent {
-  font-size: 0.9rem;
-  color: #ccc;
-  margin-top: 6px;
-  display: block;
+.skill-item .icon {
+  font-size: 2.4rem;
+  margin-bottom: 8px;
+}
+
+.skill-item span {
+  font-size: 0.95rem;
+  color: #ff6600;
+  font-weight: 500;
+  letter-spacing: 0.3px;
 }

@@ -1,25 +1,32 @@
 import React from 'react';
 import './Hero.css';
 import profile from '../assets/profile.png';
-import { FaGithub, FaLinkedin, FaDiscord} from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaDiscord } from 'react-icons/fa';
+
 const Hero = () => {
   return (
     <section className="hero" id="hero">
       <div className="hero-right">
-        <div className="img-wrapper">
+        <div className="donut-wrapper">
+          <div className="donut-ring"></div>
           <img src={profile} alt="Rohail" />
         </div>
+
       </div>
 
       <div className="hero-left">
-        <h1>Hi, I'm Rohail</h1>
-        <p>
+        <p className="small-intro">Hi, this is</p>
+        <h1>
+          <span className="logo-orange">Ro</span>
+          <span className="logo-black">hail</span>
+        </h1>
+        <p className="hero-desc">
           I’m a Front-End Developer who builds sleek, interactive websites using React.js and modern UI/UX principles.
         </p>
         <div className="btn-wrpper">
-        <a href="#contact" className="fancy-button">Contact</a>
+          <a href="#contact" className="custom-button">Let's talk</a>
         </div>
-        <div className="social-icons">
+        {/* <div className="social-icons">
           <a href="https://github.com/Rohail-Tauq" target="_blank" rel="noopener noreferrer" className="social-icon github">
             <FaGithub />
           </a>
@@ -42,7 +49,7 @@ const Hero = () => {
               />
             </svg>
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );

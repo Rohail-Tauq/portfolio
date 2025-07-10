@@ -69,7 +69,7 @@ button:focus-visible {
 /* Scrollbar for all scrollable areas */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #00bcd4 #121212;
+  scrollbar-color: #ff6600 white;
 }
 
 /* Webkit (Chrome, Edge, Safari) */
@@ -78,11 +78,11 @@ button:focus-visible {
 }
 
 *::-webkit-scrollbar-track {
-  background: #121212; /* dark background */
+  background: white; /* dark background */
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #00bcd4; /* blue thumb */
+  background-color: #ff6600; /* blue thumb */
   border-radius: 10px;
-  border: 2px solid #121212; /* makes thumb smaller with dark border */
+  border: 2px solid white; /* makes thumb smaller with dark border */
 }

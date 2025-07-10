@@ -1,5 +1,6 @@
 import React from "react";
 import './Contact.css'
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 const Contact = () => {
 
     const onSubmit = async (event) => {
@@ -28,7 +29,7 @@ const Contact = () => {
     return(
         <section id="contact" className="contact">
             <form onSubmit={onSubmit}>
-                <h2>Contact me</h2>
+                <h2><span>Contact</span> me</h2>
                 <div className="input-box">
                     <label htmlFor="">Full Name</label>
                     <input type="text" className="field" placeholder="Enter your name" name="name" required/>
@@ -42,6 +43,24 @@ const Contact = () => {
                     <textarea name="message" id="" className="field mess" placeholder="Enter your message" required></textarea>
                 </div>
                 <button type="submit">Send message</button>
+                 <div className="contact-socials">
+                <a
+                  href="https://github.com/Rohail-Tauq"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-link"
+                >
+                  <FaGithub />
+                </a>
+                <a
+                  href="https://linkedin.com/in/rohail-tauqeer"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-link"
+                >
+                  <FaLinkedinIn />
+                </a>
+              </div>
             </form>
         </section>
     )

@@ -1,22 +1,33 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 .navbar {
   width: 100%;
   padding: 20px;
-  background-color: #1a1a1a;
-  color: #fff;
+  background-color: #ffffff;
+  color: #000000;
   position: sticky;
   top: 0;
   z-index: 10;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  font-family: 'Poppins', sans-serif;
 }
 
-
 .navbar-logo {
-  font-size: 24px;
-  font-weight: bold;
-  color: #ffffff;
+  font-size: 28px;
+  font-weight: 600;
   padding-left: 2%;
+}
+
+.logo-orange {
+  color: #ff6600;
+}
+
+.logo-black {
+  color: #000000;
 }
 
 .navbar-links {
@@ -27,11 +38,12 @@
 }
 
 .navbar-links li a {
-  color: #ffffff;
+  color: #000000;
   text-decoration: none;
   font-size: 16px;
   position: relative;
   transition: 0.3s;
+  font-weight: 500;
 }
 
 .navbar-links li a::after {
@@ -41,24 +53,28 @@
   height: 2px;
   bottom: -5px;
   left: 0;
-  background-color:  #04a4b9;
+  background-color: #ff6600;
   transition: width 0.3s;
+}
+
+.navbar-links li a:hover {
+  color: #ff6600;
 }
 
 .navbar-links li a:hover::after {
   width: 100%;
 }
+
 @media (max-width: 600px) {
   .navbar-links {
     gap: 15px;
   }
 
   .navbar-logo {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   .navbar-links li a {
     font-size: 14px;
   }
 }
-
