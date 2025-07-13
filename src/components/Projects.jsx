@@ -4,6 +4,7 @@ import typingTest from '../assets/typing.jpg';
 import quizApp from '../assets/quiz.webp';
 import BMI from '../assets/BMI.jpg';
 import weatherApp from '../assets/weather.jpg';
+import chatApp from '../assets/chatApp.jpg';
 
 const Projects = () => {
   return (
@@ -21,6 +22,19 @@ const Projects = () => {
               <h3>Typing Speed Test</h3>
               <p>Measure typing speed with live WPM tracking.</p>
               <a href="https://rohailtypingtest.vercel.app/" target="_blank" rel="noreferrer">
+                <button className="fancy-button">View</button>
+              </a>
+            </div>
+          </div>
+          <div className="project-card">
+            <a href="https://github.com/Rohail-Tauq/chat-app" target="_blank" rel="noreferrer">
+              <button className="project-live-button">view code</button>
+            </a>
+            <img src={chatApp} alt="Chat-app" className="project-image" />
+            <div className="project-content">
+              <h3>Chat App</h3>
+              <p>Chat globally with everyone logged in.</p>
+              <a href="https://rohailchatapp.vercel.app/" target="_blank" rel="noreferrer">
                 <button className="fancy-button">View</button>
               </a>
             </div>
