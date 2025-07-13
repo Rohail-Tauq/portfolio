@@ -4,8 +4,7 @@ import typingTest from '../assets/typing.jpg';
 import quizApp from '../assets/quiz.webp';
 import BMI from '../assets/BMI.jpg';
 import weatherApp from '../assets/weather.jpg';
-import chatApp from '../assets/chatApp.jpg';
-
+import chatApp from '../assets/Chatapp.jpg';
 const Projects = () => {
   return (
     <section className="projects" id="projects">
@@ -27,20 +26,6 @@ const Projects = () => {
             </div>
           </div>
           <div className="project-card">
-            <a href="https://github.com/Rohail-Tauq/chat-app" target="_blank" rel="noreferrer">
-              <button className="project-live-button">view code</button>
-            </a>
-            <img src={chatApp} alt="Chat-app" className="project-image" />
-            <div className="project-content">
-              <h3>Chat App</h3>
-              <p>Chat globally with everyone logged in.</p>
-              <a href="https://rohailchatapp.vercel.app/" target="_blank" rel="noreferrer">
-                <button className="fancy-button">View</button>
-              </a>
-            </div>
-          </div>
-
-          <div className="project-card">
             <a href="https://github.com/Rohail-Tauq/Quiz-app" target="_blank" rel="noreferrer">
               <button className="project-live-button">view code</button>
             </a>
@@ -54,6 +39,19 @@ const Projects = () => {
             </div>
           </div>
 
+          <div className="project-card">
+            <a href="https://github.com/Rohail-Tauq/chat-app" target="_blank" rel="noreferrer">
+              <button className="project-live-button">view code</button>
+            </a>
+            <img src={chatApp} alt="Chat-app" className="project-image" />
+            <div className="project-content">
+              <h3>Chat-app</h3>
+              <p>Global chatapp using firebase as database</p>
+              <a href="https://rohailchatapp.vercel.app/" target="_blank" rel="noreferrer">
+                <button className="fancy-button">View</button>
+              </a>
+            </div>
+          </div>
           <div className="project-card">
             <a href="https://github.com/Rohail-Tauq/Weather-Forecast" target="_blank" rel="noreferrer">
               <button className="project-live-button">view code</button>
