@@ -5,7 +5,7 @@ import quizApp from '../assets/quiz.webp';
 import BMI from '../assets/BMI.jpg';
 import weatherApp from '../assets/weather.jpg';
 import chatApp from '../assets/Chatapp.jpg';
-import studentPortal from '../assets/studentPortal.png';
+import studentPortal from '../assets/studentportal.png';
 const Projects = () => {
   return (
     <section className="projects" id="projects">
