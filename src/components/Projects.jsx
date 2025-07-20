@@ -5,6 +5,7 @@ import quizApp from '../assets/quiz.webp';
 import BMI from '../assets/BMI.jpg';
 import weatherApp from '../assets/weather.jpg';
 import chatApp from '../assets/Chatapp.jpg';
+import studentPortal from '../assets/studentPortal.png';
 const Projects = () => {
   return (
     <section className="projects" id="projects">
@@ -75,6 +76,20 @@ const Projects = () => {
               <h3>BMI Calculator</h3>
               <p>BMI calculation of Metric and Imperial categories.</p>
               <a href="https://rohailbmicalculator.vercel.app/" target="_blank" rel="noreferrer">
+                <button className="fancy-button">View</button>
+              </a>
+            </div>
+          </div>
+
+          <div className="project-card">
+            <a href="https://github.com/Rohail-Tauq/student-portal" target="_blank" rel="noreferrer">
+              <button className="project-live-button">view code</button>
+            </a>
+            <img src={studentPortal} alt="Quiz App" className="project-image" />
+            <div className="project-content">
+              <h3>Student Portal</h3>
+              <p>Student portal where admin can create teacher and student accounts and assign classes.</p>
+              <a href="https://rohailstudentportal.vercel.app/" target="_blank" rel="noreferrer">
                 <button className="fancy-button">View</button>
               </a>
             </div>
