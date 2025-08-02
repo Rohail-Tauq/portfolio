@@ -6,6 +6,7 @@ import BMI from '../assets/BMI.jpg';
 import weatherApp from '../assets/weather.jpg';
 import chatApp from '../assets/Chatapp.jpg';
 import studentPortal from '../assets/studentportal.png';
+import NotesNest from '../assets/notesnest.jpg';
 const Projects = () => {
   return (
     <section className="projects" id="projects">
@@ -85,7 +86,7 @@ const Projects = () => {
             <a href="https://github.com/Rohail-Tauq/student-portal" target="_blank" rel="noreferrer">
               <button className="project-live-button">view code</button>
             </a>
-            <img src={studentPortal} alt="Quiz App" className="project-image" />
+            <img src={studentPortal} alt="Student portal" className="project-image" />
             <div className="project-content">
               <h3>Student Portal</h3>
               <p>Student portal where admin can create teacher and student accounts and assign classes.</p>
@@ -94,7 +95,19 @@ const Projects = () => {
               </a>
             </div>
           </div>
-
+          <div className="project-card">
+            <a href="https://github.com/Rohail-Tauq/Notes-Nest" target="_blank" rel="noreferrer">
+              <button className="project-live-button">view code</button>
+            </a>
+            <img src={NotesNest} alt="notesnest" className="project-image" />
+            <div className="project-content">
+              <h3>Notes Nest</h3>
+              <p>Helps in making notes with edit and delete notes feature</p>
+              <a href="https://rohailnotesnest.vercel.app/" target="_blank" rel="noreferrer">
+                <button className="fancy-button">View</button>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
